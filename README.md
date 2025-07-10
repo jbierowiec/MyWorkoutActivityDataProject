@@ -87,7 +87,7 @@ Your Strava data remains local and is never uploaded or shared. If publishing th
 ![Monthly Distance](plots/all_activities_pi_chart_distribution.png)
 
 ### Locations of Activities 
-![USA Activities](plots/usa_rides.png)
+![USA Activities](plots/usa_activities.png)
 ![Poland Activities](plots/poland_activities.png)
 
 ## Map Visualizations
