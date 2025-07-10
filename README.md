@@ -35,14 +35,17 @@ MyStravaStats is a personal data analysis project built using Jupyter Notebook a
 │   ├── monthly_distance.png
 │   ├── monthly_elevation_gain.png
 │   ├── monthly_moving_hours.png
-│   ├── poland_rides.png
-│   ├── usa_rides.png
+│   ├── poland_activities.png
+│   ├── power_output_per_ride.png
+│   ├── power_zone_frequency.png
+│   ├── usa_activities.png
 │   ├── weekly_average_speed.png
 │   ├── weekly_distance.png
 │   ├── weekly_elevation_gain.png
 │   └── weekly_moving_hours.png
 ├── strava_analysis.ipynb
-├── strava_activities.csv                
+├── strava_activities.csv      
+├── power_zone_summary.csv              
 └── README.md
 ```
 
@@ -85,7 +88,7 @@ Your Strava data remains local and is never uploaded or shared. If publishing th
 
 ### Locations of Activities 
 ![USA Activities](plots/usa_rides.png)
-![Poland Activities](plots/poland_rides.png)
+![Poland Activities](plots/poland_activities.png)
 
 ## Map Visualizations
 
