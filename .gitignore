@@ -1,0 +1,33 @@
+# --- Environment files (secrets) ---
+.env
+.env.*
+!.env.example
+
+# --- Python bytecode / cache ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# --- Jupyter notebook cruft ---
+.ipynb_checkpoints/
+*.ipynb~
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+.envs/
+vscode/
+.vscode/
+
+# --- OS / editor files ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# --- Project-specific (optional) ---
+/downloads/
+/plots/
+/data_tmp/

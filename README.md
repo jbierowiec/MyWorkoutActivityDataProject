@@ -23,12 +23,18 @@ MyStravaStats is a personal data analysis project built using Jupyter Notebook a
 
 ## Project Structure
 
-```plaintext    
+```plaintext 
+├── assets/   
+│   ├── api_application.png
+│   ├── api_page.png
+│   └── main_page.png
 ├── plots/
 │   ├── activities_per_weekday.png
 │   ├── activity_start_times_heatmap.png
 │   ├── all_activities_pi_chart_distribution.png
 │   ├── correlation_heatmap.png
+│   ├── interactive_clean.html
+│   ├── interactive_detailed.html
 │   ├── interactive_routes_clean.html
 │   ├── interactive_routes_detailed.html
 │   ├── monthly_average_speed.png
@@ -50,6 +56,20 @@ MyStravaStats is a personal data analysis project built using Jupyter Notebook a
 ```
 
 ## Setup Instructions
+
+### Strava API
+
+Visit the strava developers page https://developers.strava.com, and you should click on the **Create & Manage Your App** link as is shown in the screenshot below: 
+
+![Developer Page](assets/main_page.png)
+
+You are then redirected to https://www.strava.com/settings/api, where you set up your API Application. You should see a screen as is shwon in the screenshot below:
+
+![API Page](assets/api_page.png)
+
+Before the client ID, client secret, and access token is generated, you fill out an application regarding what you will be using the Strava API for. You will need to provide an Application Name, the category it will belong to, a club it will be be part of (optional), a website it should be connected to, an application description (optional), as well as provide the Authorization Callback Domain, which should be localhost or 127.0.0.1 for simplicity. Below is a screenshot of what it should look like. Once evrything is set up, you can begin programming in the Jupyter Notebook. 
+
+![API Application](assets/api_application.png)
 
 ### Prerequisites
 
@@ -80,11 +100,20 @@ Your Strava data remains local and is never uploaded or shared. If publishing th
 ### Activity Frequency Heatmap
 ![Heatmap](plots/activity_start_times_heatmap.png)
 
+### Weekly Average Speed Overview
+![Weekly Average Speed](plots/weekly_average_speed.png)
+
 ### Weekly Distance Overview
-![Monthly Distance](plots/weekly_distance.png)
+![Weekly Distance](plots/weekly_distance.png)
+
+### Weekly Elevation Gain Overview
+![Weekly Distance](plots/weekly_elevation_gain.png)
+
+### Weekly Moving Hours Overview
+![Weekly Distance](plots/weekly_moving_hours.png)
 
 ### Common Workouts
-![Monthly Distance](plots/all_activities_pi_chart_distribution.png)
+![Common Workouts](plots/all_activities_pi_chart_distribution.png)
 
 ### Locations of Activities 
 ![USA Activities](plots/usa_activities.png)
@@ -108,8 +137,8 @@ This project includes interactive HTML maps for route visualizations:
 ## Limitations and Future Improvements
 
 - Currently supports only activities with GPS data.
-- Does not include heart rate or power data (yet).
+- Does not include heart rate data (yet).
 - Future plans:
-  - Add performance trendlines and forecast models.
+  - Add performance trendlines and forecast models for upcoming weeks, months & years. 
   - Implement goal tracking and achievement detection.
-  - Enable comparisons between years.
+  - Enable (overall) comparisons between years.
