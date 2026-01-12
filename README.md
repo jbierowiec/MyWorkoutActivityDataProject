@@ -49,6 +49,7 @@ MyStravaStats is a personal data analysis project built using Jupyter Notebook a
 │   ├── weekly_distance.png
 │   ├── weekly_elevation_gain.png
 │   └── weekly_moving_hours.png
+├── .gitignore
 ├── strava_analysis.ipynb
 ├── strava_activities.csv      
 ├── power_zone_summary.csv              
