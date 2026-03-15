@@ -142,4 +142,3 @@ This project includes interactive HTML maps for route visualizations:
 - Future plans:
   - Add performance trendlines and forecast models for upcoming weeks, months & years. 
   - Implement goal tracking and achievement detection.
-  - Enable (overall) comparisons between years.
