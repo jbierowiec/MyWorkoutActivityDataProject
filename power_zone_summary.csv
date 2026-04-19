@@ -112,7 +112,7 @@ Date,Ride Name,Est. Power (W),Power Zone
 2025-08-10 10:16:06+00:00,Glacier National Park: Day 3,15.6,Z1 - Recovery
 2025-08-11 09:44:09+00:00,Glacier National Park: Day 4,29.3,Z1 - Recovery
 2025-08-12 08:07:51+00:00,Glacier National Park: Day 5,29.4,Z1 - Recovery
-2025-08-12 08:10:45+00:00,Glacier National Park: Full Day 5,20.0,Z1 - Recovery
+2025-08-12 08:10:45+00:00,Glacier National Park: Day 5 (Full Trail),20.0,Z1 - Recovery
 2025-08-18 19:21:40+00:00,Ride 70,128.2,Z1 - Recovery
 2025-08-19 13:19:55+00:00,Ride 71,127.6,Z1 - Recovery
 2025-08-19 20:35:19+00:00,Walk 9,9.6,Z1 - Recovery
@@ -228,3 +228,38 @@ Date,Ride Name,Est. Power (W),Power Zone
 2026-03-14 05:17:30+00:00,Morning Ride,91.9,Z1 - Recovery
 2026-03-14 08:37:34+00:00,Morning Ride,126.5,Z1 - Recovery
 2026-03-14 16:21:15+00:00,Ride 9,84.9,Z1 - Recovery
+2026-03-15 14:53:53+00:00,Ride 10,117.0,Z1 - Recovery
+2026-03-19 05:16:41+00:00,Morning Ride,97.4,Z1 - Recovery
+2026-03-19 07:58:05+00:00,Morning Ride,102.6,Z1 - Recovery
+2026-03-21 16:42:53+00:00,Ride 11,115.3,Z1 - Recovery
+2026-03-22 10:19:15+00:00,Ride 12,119.0,Z1 - Recovery
+2026-03-25 10:50:16+00:00,Ride 13,97.5,Z1 - Recovery
+2026-03-26 11:15:45+00:00,Ride 14,116.1,Z1 - Recovery
+2026-03-27 15:18:57+00:00,Ride 15,110.6,Z1 - Recovery
+2026-03-28 05:05:03+00:00,Morning Ride,76.8,Z1 - Recovery
+2026-03-28 06:27:42+00:00,Race 1,139.1,Z2 - Endurance
+2026-03-28 08:05:54+00:00,Morning Ride,108.6,Z1 - Recovery
+2026-03-28 11:10:32+00:00,Lunch Ride,59.6,Z1 - Recovery
+2026-03-29 13:28:00+00:00,Afternoon Ride,128.6,Z1 - Recovery
+2026-03-29 16:37:02+00:00,Afternoon Ride,161.5,Z2 - Endurance
+2026-03-31 04:21:20+00:00,Morning Ride,88.5,Z1 - Recovery
+2026-03-31 04:27:34+00:00,Ride 16: NYC -> Albany,99.8,Z1 - Recovery
+2026-04-02 13:47:19+00:00,Ride 17,122.2,Z1 - Recovery
+2026-04-03 09:21:35+00:00,Ride 18,87.2,Z1 - Recovery
+2026-04-04 12:30:24+00:00,Hike 1,33.9,Z1 - Recovery
+2026-04-05 18:24:20+00:00,Ride 19,125.2,Z1 - Recovery
+2026-04-06 14:43:37+00:00,Ride 20,113.1,Z1 - Recovery
+2026-04-07 15:59:14+00:00,Ride 21,122.6,Z1 - Recovery
+2026-04-10 18:14:41+00:00,Ride 22,117.0,Z1 - Recovery
+2026-04-11 13:03:05+00:00,Hike 2,30.1,Z1 - Recovery
+2026-04-12 14:52:49+00:00,Ride 23,139.9,Z2 - Endurance
+2026-04-14 16:38:41+00:00,Ride 24,135.8,Z1 - Recovery
+2026-04-16 19:57:01+00:00,Ride 25,124.3,Z1 - Recovery
+2026-04-17 16:04:04+00:00,Ride 26,119.8,Z1 - Recovery
+2026-04-18 04:34:22+00:00,Morning Ride,105.8,Z1 - Recovery
+2026-04-18 07:32:53+00:00,Morning Ride,165.3,Z2 - Endurance
+2026-04-18 07:38:43+00:00,Morning Ride,116.3,Z1 - Recovery
+2026-04-18 11:09:23+00:00,Hike 3,19.4,Z1 - Recovery
+2026-04-18 14:54:26+00:00,Afternoon Ride,123.0,Z1 - Recovery
+2026-04-18 15:41:01+00:00,Afternoon Ride,96.6,Z1 - Recovery
+2026-04-18 20:11:39+00:00,Run 3,38.6,Z1 - Recovery
