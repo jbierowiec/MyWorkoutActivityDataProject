@@ -140,9 +140,9 @@ Your Strava data remains local and is never uploaded or shared. If publishing th
 ![Common Workouts](plots/all_activities_pi_chart_distribution.png)
 
 ### Locations of Activities 
-![North America Activities](plots/north_america_strava_activities.png)
-![Europe Activities](plots/europe_strava_activities.png)
-![Oceania Activities](plots/oceania_strava_activities.png)
+![North America Activities](plots/north_america_activities.png)
+![Europe Activities](plots/europe_activities.png)
+![Oceania Activities](plots/oceania_activities.png)
 
 ## Map Visualizations
 
@@ -153,11 +153,11 @@ This project includes interactive HTML maps for route visualizations:
 
 ### Interactive Clean Map
 
-![Clean Map](plots/interactive_clean.png)
+![Clean Map](plots/interactive_activities_clean_map.png)
 
 ### Interactive Detailed Map
 
-![Detailed Map](plots/interactive_detailed.png)
+![Detailed Map](plots/interactive_activities_detailed_map.png)
 
 ## Limitations and Future Improvements
 
