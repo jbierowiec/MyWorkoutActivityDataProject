@@ -1,6 +1,6 @@
-# MyStravaStats
+# MyWorkoutActivityDataProject
 
-MyStravaStats is a personal data analysis project built using Jupyter Notebook and Python to visualize and understand personal fitness trends using exported Strava activity data. This project offers comprehensive insights through interactive plots and statistics for various types of activities (running, cycling, hiking, etc.).
+MyWorkoutActivityDataProject is a personal data analysis project built using Jupyter Notebook and Python to visualize and understand personal fitness trends using exported Strava activity data. This project offers comprehensive insights through interactive plots and statistics for various types of activities (running, swimming, cycling, hiking, walking, etc.).
 
 ## Insights You Can Discover
 
@@ -8,7 +8,7 @@ MyStravaStats is a personal data analysis project built using Jupyter Notebook a
 - Which days of the week are you most active?
 - Are there patterns in your activity start times?
 - What type of activity do you perform most often?
-- Which regions (e.g., USA vs. Poland) are most common for your rides?
+- Which regions (e.g., North America vs. Europe vs. Oceania) are most common for your activities?
 - Are there seasonal trends in your activity levels?
 
 ## Features
@@ -29,22 +29,33 @@ MyStravaStats is a personal data analysis project built using Jupyter Notebook a
 │   ├── api_page.png
 │   └── main_page.png
 ├── plots/
+│   ├── activity_type_maps
+│   │   ├── cycling_routes_2024_2026.html
+│   │   ├── hiking_routes_2024_2026.html
+│   │   ├── paddling_routes_2024_2026.html
+│   │   ├── running_routes_2024_2026.html
+│   │   └── walking_routes_2024_2026.html
+│   ├── year_maps
+│   │   ├── activities_2024.html
+│   │   ├── activities_2025.html
+│   │   └── activities_2026.html
 │   ├── activities_per_weekday.png
 │   ├── activity_start_times_heatmap.png
 │   ├── all_activities_pi_chart_distribution.png
 │   ├── correlation_heatmap.png
-│   ├── interactive_clean.html
-│   ├── interactive_detailed.html
-│   ├── interactive_routes_clean.html
-│   ├── interactive_routes_detailed.html
+│   ├── europe_activities.png
+│   ├── interactive_activities_clean_map.html
+│   ├── interactive_activities_clean_map.png
+│   ├── interactive_activities_detailed_map.html
+│   ├── interactive_activities_detailed_map.png
 │   ├── monthly_average_speed.png
 │   ├── monthly_distance.png
 │   ├── monthly_elevation_gain.png
 │   ├── monthly_moving_hours.png
-│   ├── poland_activities.png
+│   ├── north_america_activities.png
+│   ├── oceania_activities.png
 │   ├── power_output_per_ride.png
 │   ├── power_zone_frequency.png
-│   ├── usa_activities.png
 │   ├── weekly_average_speed.png
 │   ├── weekly_distance.png
 │   ├── weekly_elevation_gain.png
@@ -101,6 +112,18 @@ Your Strava data remains local and is never uploaded or shared. If publishing th
 ### Activity Frequency Heatmap
 ![Heatmap](plots/activity_start_times_heatmap.png)
 
+### Monthly Average Speed Overview
+![Monthly Average Speed](plots/monthly_average_speed.png)
+
+### Monthly Distance Overview
+![Monthly Distance](plots/monthly_distance.png)
+
+### Monthly Elevation Gain Overview
+![Monthly Distance](plots/monthly_elevation_gain.png)
+
+### Monthly Moving Hours Overview
+![Monthly Distance](plots/monthly_moving_hours.png)
+
 ### Weekly Average Speed Overview
 ![Weekly Average Speed](plots/weekly_average_speed.png)
 
@@ -117,8 +140,9 @@ Your Strava data remains local and is never uploaded or shared. If publishing th
 ![Common Workouts](plots/all_activities_pi_chart_distribution.png)
 
 ### Locations of Activities 
-![USA Activities](plots/usa_activities.png)
-![Poland Activities](plots/poland_activities.png)
+![North America Activities](plots/north_america_strava_activities.png)
+![Europe Activities](plots/europe_strava_activities.png)
+![Oceania Activities](plots/oceania_strava_activities.png)
 
 ## Map Visualizations
 

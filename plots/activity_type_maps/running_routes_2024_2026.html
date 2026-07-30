@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4956a72c71ae0950c4a34f59067bd8de {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+    <div style="
+        position: fixed;
+        top: 10px;
+        left: 55px;
+        z-index: 9999;
+        background-color: rgba(255, 255, 255, 0.96);
+        padding: 14px 17px;
+        border: 2px solid #d9d9d9;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16);
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        min-width: 280px;
+        max-width: 350px;
+    ">
+        <h3 style="
+            margin: 0 0 9px 0;
+            font-size: 19px;
+        ">
+            Running Activities
+        </h3>
+
+        <div style="margin-bottom: 3px;">
+            <b>Years:</b>
+            2024–2026
+        </div>
+
+        <div style="margin-bottom: 3px;">
+            <b>Total Activities:</b>
+            14
+        </div>
+
+        <div style="margin-bottom: 3px;">
+            <b>Total Distance:</b>
+            16.1 miles
+        </div>
+
+        <div style="margin-bottom: 3px;">
+            <b>Total Elevation:</b>
+            482 feet
+        </div>
+
+        <div style="margin-bottom: 3px;">
+            <b>Routes Displayed:</b>
+            14
+        </div>
+
+        
+        <div style="
+            margin-top: 7px;
+            padding-top: 7px;
+            border-top: 1px solid #e4e4e4;
+        ">
+            <span style="
+                display: inline-block;
+                width: 11px;
+                height: 11px;
+                border-radius: 50%;
+                background-color: #1f77b4;
+                margin-right: 5px;
+            "></span>
+
+            <b>2024:</b>
+            0 activities,
+            0.0 miles
+        </div>
+        
+        <div style="
+            margin-top: 7px;
+            padding-top: 7px;
+            border-top: 1px solid #e4e4e4;
+        ">
+            <span style="
+                display: inline-block;
+                width: 11px;
+                height: 11px;
+                border-radius: 50%;
+                background-color: #ff7f0e;
+                margin-right: 5px;
+            "></span>
+
+            <b>2025:</b>
+            3 activities,
+            3.3 miles
+        </div>
+        
+        <div style="
+            margin-top: 7px;
+            padding-top: 7px;
+            border-top: 1px solid #e4e4e4;
+        ">
+            <span style="
+                display: inline-block;
+                width: 11px;
+                height: 11px;
+                border-radius: 50%;
+                background-color: #2ca02c;
+                margin-right: 5px;
+            "></span>
+
+            <b>2026:</b>
+            11 activities,
+            12.8 miles
+        </div>
+        
+    </div>
+    
+    
+            <div class="folium-map" id="map_4956a72c71ae0950c4a34f59067bd8de" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4956a72c71ae0950c4a34f59067bd8de = L.map(
+                "map_4956a72c71ae0950c4a34f59067bd8de",
+                {
+                    center: [31.0225950910596, 8.958213269867551],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": true,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_4956a72c71ae0950c4a34f59067bd8de);
+
+            
+
+        
+    
+            var tile_layer_5fb723a75d48679ef4a84d1a7c537879 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5fb723a75d48679ef4a84d1a7c537879.addTo(map_4956a72c71ae0950c4a34f59067bd8de);
+        
+    
+            var tile_layer_1b1907353c39ec413a4c7ff768e1fdd5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            var tile_layer_c19f9c390d566cf660055218f772d454 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            L.control.fullscreen(
+                {
+  "position": "topleft",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_4956a72c71ae0950c4a34f59067bd8de);
+        
+    
+            var tile_layer_21019caf53f2611655107cce5ec305d0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_3c2c302e1cd17836c9e30ecf4dba9537 = new L.Control.MiniMap(
+                tile_layer_21019caf53f2611655107cce5ec305d0,
+                {
+  "position": "bottomright",
+  "width": 170,
+  "height": 120,
+  "collapsedWidth": 25,
+  "collapsedHeight": 25,
+  "zoomLevelOffset": -5,
+  "centerFixed": false,
+  "zoomAnimation": false,
+  "toggleDisplay": true,
+  "autoToggleDisplay": false,
+  "minimized": false,
+}
+            );
+            map_4956a72c71ae0950c4a34f59067bd8de.addControl(mini_map_3c2c302e1cd17836c9e30ecf4dba9537);
+        
+    
+            var feature_group_7004fe13847d857648890d399eea5470 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_7004fe13847d857648890d399eea5470.addTo(map_4956a72c71ae0950c4a34f59067bd8de);
+        
+    
+            var marker_cluster_110b02bf7af56f079b3b27c08a94d00f = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            marker_cluster_110b02bf7af56f079b3b27c08a94d00f.addTo(map_4956a72c71ae0950c4a34f59067bd8de);
+        
+    
+            var feature_group_86950d22f9819a256e1d928ddefe5e2f = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_923a17afdba2cf636b7d27ba8d5f5005 = L.polyline(
+                [[40.75312, -73.89094], [40.75316, -73.89062], [40.75319, -73.89054], [40.75316, -73.89044], [40.75316, -73.89026], [40.75315, -73.89019], [40.75323, -73.88967], [40.75325, -73.88925], [40.75331, -73.88879], [40.75336, -73.88864], [40.75337, -73.88844], [40.75345, -73.88814], [40.75346, -73.88773], [40.75356, -73.88711], [40.75355, -73.88678], [40.75358, -73.88661], [40.75358, -73.88647], [40.75367, -73.88605], [40.75368, -73.88518], [40.75372, -73.88508], [40.75378, -73.88507], [40.75385, -73.88515], [40.75385, -73.88526], [40.75375, -73.88553], [40.7536, -73.88608], [40.75361, -73.88628], [40.7536, -73.88648], [40.7535, -73.88695], [40.75349, -73.88707], [40.75349, -73.88736], [40.75342, -73.88803], [40.75334, -73.88842], [40.75334, -73.88912], [40.75327, -73.88955], [40.75328, -73.88974], [40.75333, -73.88978], [40.75334, -73.88988], [40.75331, -73.89001], [40.7532, -73.89029], [40.75307, -73.89124]],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff7f0e", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_86950d22f9819a256e1d928ddefe5e2f);
+        
+    
+        var popup_2e3e66051788b717b5b1edea3166d05a = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_92c92862fdb58552963b9b117b56cc0e = $(`<div id="html_92c92862fdb58552963b9b117b56cc0e" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 3         </h4>          <div>             <b>Date:</b> July 17, 2025 at 08:54 PM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.00 miles         </div>          <div>             <b>Elevation Gain:</b> 37 feet         </div>          <div>             <b>Moving Time:</b> 8m 10s         </div>     </div>     </div>`)[0];
+                popup_2e3e66051788b717b5b1edea3166d05a.setContent(html_92c92862fdb58552963b9b117b56cc0e);
+            
+        
+
+        poly_line_923a17afdba2cf636b7d27ba8d5f5005.bindPopup(popup_2e3e66051788b717b5b1edea3166d05a)
+        ;
+
+        
+    
+    
+            poly_line_923a17afdba2cf636b7d27ba8d5f5005.bindTooltip(
+                `<div>
+                     Run 3 — 2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_6cb7a1640a004fe8b30f2352a0f11473 = L.polyline(
+                [[40.75312, -73.89101], [40.7532, -73.89074], [40.75318, -73.89058], [40.75322, -73.89021], [40.75321, -73.89], [40.75323, -73.88974], [40.75322, -73.8896], [40.75325, -73.88926], [40.75326, -73.88905], [40.75332, -73.88867], [40.75345, -73.8881], [40.75345, -73.8879], [40.75347, -73.88774], [40.75347, -73.88751], [40.75354, -73.88698], [40.75354, -73.88677], [40.75363, -73.88631], [40.75362, -73.88596], [40.75366, -73.88547], [40.75371, -73.88519], [40.75376, -73.88516], [40.75379, -73.88517], [40.75381, -73.88525], [40.75371, -73.88558], [40.75363, -73.88623], [40.75363, -73.88636], [40.75355, -73.88666], [40.75356, -73.88685], [40.75353, -73.88703], [40.75348, -73.88769], [40.75339, -73.88836], [40.75335, -73.88876], [40.75338, -73.88912], [40.75334, -73.88967], [40.75327, -73.88993], [40.75326, -73.89014], [40.75318, -73.89038], [40.75315, -73.8907], [40.75318, -73.89068], [40.75317, -73.8908], [40.7531, -73.89131]],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff7f0e", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_86950d22f9819a256e1d928ddefe5e2f);
+        
+    
+        var popup_209d79eb511bad07472c693325d1793b = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_42d9111327218be236c63be714caf33f = $(`<div id="html_42d9111327218be236c63be714caf33f" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 2         </h4>          <div>             <b>Date:</b> July 16, 2025 at 08:49 PM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.00 miles         </div>          <div>             <b>Elevation Gain:</b> 37 feet         </div>          <div>             <b>Moving Time:</b> 8m 10s         </div>     </div>     </div>`)[0];
+                popup_209d79eb511bad07472c693325d1793b.setContent(html_42d9111327218be236c63be714caf33f);
+            
+        
+
+        poly_line_6cb7a1640a004fe8b30f2352a0f11473.bindPopup(popup_209d79eb511bad07472c693325d1793b)
+        ;
+
+        
+    
+    
+            poly_line_6cb7a1640a004fe8b30f2352a0f11473.bindTooltip(
+                `<div>
+                     Run 2 — 2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_e99322debad071216dfdeef2a1c69884 = L.polyline(
+                [[40.70097, -73.8506], [40.70107, -73.85054], [40.70116, -73.85051], [40.70126, -73.85053], [40.70142, -73.85061], [40.70144, -73.85064], [40.70151, -73.85064], [40.70166, -73.85072], [40.70169, -73.85072], [40.70173, -73.8507], [40.70178, -73.85071], [40.70188, -73.85069], [40.70191, -73.8507], [40.70208, -73.85067], [40.70225, -73.85061], [40.70241, -73.85059], [40.70254, -73.85054], [40.70256, -73.8505], [40.70263, -73.85049], [40.70272, -73.85045], [40.70292, -73.85029], [40.70296, -73.85027], [40.70304, -73.85011], [40.70315, -73.85001], [40.70324, -73.8499], [40.70333, -73.84969], [40.70339, -73.84961], [40.70345, -73.84938], [40.7035, -73.8493], [40.70349, -73.84924], [40.70357, -73.84898], [40.70362, -73.84861], [40.70361, -73.84851], [40.70362, -73.84843], [40.70362, -73.84812], [40.70356, -73.84773], [40.70356, -73.84768], [40.70352, -73.8476], [40.70349, -73.84746], [40.70346, -73.84741], [40.70344, -73.84733], [40.70341, -73.84725], [40.70338, -73.84714], [40.70332, -73.84707], [40.7033, -73.84694], [40.70324, -73.84686], [40.70319, -73.84672], [40.70304, -73.84646], [40.70297, -73.84639], [40.70282, -73.84613], [40.70277, -73.84609], [40.70269, -73.84592], [40.70264, -73.84587], [40.70258, -73.8457], [40.70256, -73.84558], [40.70249, -73.84543], [40.70251, -73.8453], [40.70248, -73.84524], [40.7025, -73.8452], [40.70249, -73.84516], [40.70251, -73.84512], [40.70249, -73.84507], [40.70252, -73.84495], [40.70254, -73.84478], [40.70264, -73.84439], [40.70265, -73.84417], [40.70268, -73.84414], [40.7027, -73.84425], [40.70266, -73.84435], [40.70264, -73.84455], [40.7026, -73.84464], [40.70259, -73.84473], [40.70256, -73.84479], [40.70254, -73.8449], [40.70247, -73.84512], [40.70248, -73.84516], [40.7025, -73.84541], [40.70255, -73.84571], [40.70262, -73.84584], [40.70263, -73.8459], [40.70267, -73.84596], [40.70268, -73.84602], [40.70277, -73.84611], [40.70279, -73.84617], [40.70287, -73.84624], [40.70293, -73.84634], [40.70299, -73.8464], [40.70301, -73.84646], [40.70321, -73.84679], [40.70323, -73.84686], [40.70327, -73.8469], [40.7033, -73.84701], [40.70334, -73.84705], [40.70346, -73.84738], [40.70345, -73.84744], [40.70355, -73.84766], [40.70354, -73.8478], [40.70357, -73.84787], [40.70357, -73.84804], [40.70362, -73.84831], [40.70362, -73.84871], [40.70364, -73.84886], [40.7036, -73.8491], [40.70353, -73.84929], [40.70351, -73.8494], [40.70347, -73.8495], [40.70336, -73.84975], [40.70329, -73.84985], [40.70317, -73.84997], [40.70304, -73.85014], [40.70273, -73.85041], [40.70259, -73.8505], [40.70254, -73.85056], [40.70247, -73.85056], [40.70233, -73.85064], [40.70226, -73.85065], [40.70219, -73.85063], [40.70204, -73.8507], [40.70188, -73.85069], [40.70178, -73.85072], [40.70168, -73.85073], [40.70164, -73.85071], [40.7016, -73.85071], [40.70138, -73.85063], [40.70137, -73.8506], [40.70134, -73.85059], [40.7011, -73.85055], [40.70107, -73.85059], [40.70091, -73.85066]],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff7f0e", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_86950d22f9819a256e1d928ddefe5e2f);
+        
+    
+        var popup_cef61cfbf716dbdd3a89bbb8160e5153 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_1d7552c7c294943e202e2d275a85e9cc = $(`<div id="html_1d7552c7c294943e202e2d275a85e9cc" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 1 Bieg Tropem Wilczym         </h4>          <div>             <b>Date:</b> March 02, 2025 at 12:07 PM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.29 miles         </div>          <div>             <b>Elevation Gain:</b> 55 feet         </div>          <div>             <b>Moving Time:</b> 11m 24s         </div>     </div>     </div>`)[0];
+                popup_cef61cfbf716dbdd3a89bbb8160e5153.setContent(html_1d7552c7c294943e202e2d275a85e9cc);
+            
+        
+
+        poly_line_e99322debad071216dfdeef2a1c69884.bindPopup(popup_cef61cfbf716dbdd3a89bbb8160e5153)
+        ;
+
+        
+    
+    
+            poly_line_e99322debad071216dfdeef2a1c69884.bindTooltip(
+                `<div>
+                     Run 1 Bieg Tropem Wilczym — 2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_86950d22f9819a256e1d928ddefe5e2f.addTo(map_4956a72c71ae0950c4a34f59067bd8de);
+        
+    
+            var marker_cluster_b4328c9f3a1658431e8022005dadbca0 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_fb8a62f9d47e228560d0165bf078b492 = L.circleMarker(
+                [40.75312, -73.89094],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(marker_cluster_b4328c9f3a1658431e8022005dadbca0);
+        
+    
+        var popup_d3cfb8f119ebaa0b1bed9c829cbee22c = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_0fdd21505e4dd01e25633cbad732df03 = $(`<div id="html_0fdd21505e4dd01e25633cbad732df03" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 3         </h4>          <div>             <b>Date:</b> July 17, 2025 at 08:54 PM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.00 miles         </div>          <div>             <b>Elevation Gain:</b> 37 feet         </div>          <div>             <b>Moving Time:</b> 8m 10s         </div>     </div>     </div>`)[0];
+                popup_d3cfb8f119ebaa0b1bed9c829cbee22c.setContent(html_0fdd21505e4dd01e25633cbad732df03);
+            
+        
+
+        circle_marker_fb8a62f9d47e228560d0165bf078b492.bindPopup(popup_d3cfb8f119ebaa0b1bed9c829cbee22c)
+        ;
+
+        
+    
+    
+            circle_marker_fb8a62f9d47e228560d0165bf078b492.bindTooltip(
+                `<div>
+                     Run 3 — 2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_671eb3f2355c20d01257499356d43f12 = L.circleMarker(
+                [40.75312, -73.89101],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(marker_cluster_b4328c9f3a1658431e8022005dadbca0);
+        
+    
+        var popup_768b8fdc246c2e431c43eaa87bf85143 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_f377ea2710a95c900ed9e296cbcd44cc = $(`<div id="html_f377ea2710a95c900ed9e296cbcd44cc" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 2         </h4>          <div>             <b>Date:</b> July 16, 2025 at 08:49 PM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.00 miles         </div>          <div>             <b>Elevation Gain:</b> 37 feet         </div>          <div>             <b>Moving Time:</b> 8m 10s         </div>     </div>     </div>`)[0];
+                popup_768b8fdc246c2e431c43eaa87bf85143.setContent(html_f377ea2710a95c900ed9e296cbcd44cc);
+            
+        
+
+        circle_marker_671eb3f2355c20d01257499356d43f12.bindPopup(popup_768b8fdc246c2e431c43eaa87bf85143)
+        ;
+
+        
+    
+    
+            circle_marker_671eb3f2355c20d01257499356d43f12.bindTooltip(
+                `<div>
+                     Run 2 — 2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6d3e155bb2f836959742d7d3c46ca618 = L.circleMarker(
+                [40.70097, -73.8506],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(marker_cluster_b4328c9f3a1658431e8022005dadbca0);
+        
+    
+        var popup_9dd97127569a85de412131450397b2f1 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_a96d1ddb9d7497d921f5b92710f1c316 = $(`<div id="html_a96d1ddb9d7497d921f5b92710f1c316" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 1 Bieg Tropem Wilczym         </h4>          <div>             <b>Date:</b> March 02, 2025 at 12:07 PM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.29 miles         </div>          <div>             <b>Elevation Gain:</b> 55 feet         </div>          <div>             <b>Moving Time:</b> 11m 24s         </div>     </div>     </div>`)[0];
+                popup_9dd97127569a85de412131450397b2f1.setContent(html_a96d1ddb9d7497d921f5b92710f1c316);
+            
+        
+
+        circle_marker_6d3e155bb2f836959742d7d3c46ca618.bindPopup(popup_9dd97127569a85de412131450397b2f1)
+        ;
+
+        
+    
+    
+            circle_marker_6d3e155bb2f836959742d7d3c46ca618.bindTooltip(
+                `<div>
+                     Run 1 Bieg Tropem Wilczym — 2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_b4328c9f3a1658431e8022005dadbca0.addTo(map_4956a72c71ae0950c4a34f59067bd8de);
+        
+    
+            var feature_group_aca0e25eb4a2ff544009999077a96f0a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_9144e18c0c97cc69d437abe7601df174 = L.polyline(
+                [[-23.69914, 133.88381], [-23.69929, 133.88406], [-23.69939, 133.88412], [-23.6995, 133.88411], [-23.69973, 133.88405], [-23.69979, 133.88403], [-23.69979, 133.88402], [-23.69982, 133.884], [-23.69996, 133.88397], [-23.70039, 133.88394], [-23.70051, 133.8839], [-23.7006, 133.88384], [-23.70071, 133.88381], [-23.70077, 133.88376], [-23.70087, 133.88372], [-23.70088, 133.88369], [-23.70092, 133.88369], [-23.70097, 133.88366], [-23.70108, 133.88365], [-23.70117, 133.8836], [-23.70124, 133.88361], [-23.70133, 133.88343], [-23.70136, 133.8834], [-23.7014, 133.88341], [-23.70142, 133.88337], [-23.70149, 133.88333], [-23.70165, 133.88337], [-23.7018, 133.88324], [-23.70197, 133.88315], [-23.70201, 133.88311], [-23.70207, 133.88309], [-23.70246, 133.88277], [-23.70261, 133.88261], [-23.70268, 133.88256], [-23.7027, 133.88251], [-23.70271, 133.88224], [-23.70268, 133.88211], [-23.70263, 133.88191], [-23.7026, 133.88189], [-23.70255, 133.88172], [-23.70246, 133.88154], [-23.70242, 133.88152], [-23.70231, 133.88159], [-23.70221, 133.88163], [-23.702, 133.88175], [-23.70189, 133.88178], [-23.70158, 133.88192], [-23.70151, 133.88197], [-23.70141, 133.88201], [-23.70117, 133.88216], [-23.70113, 133.8822], [-23.70106, 133.88221], [-23.70096, 133.88227], [-23.70086, 133.8823], [-23.70083, 133.8823], [-23.70077, 133.88234], [-23.7007, 133.88234], [-23.70061, 133.88238], [-23.70054, 133.88238], [-23.70037, 133.88244], [-23.70031, 133.88243], [-23.70025, 133.88245], [-23.70019, 133.88254], [-23.70007, 133.88263], [-23.69984, 133.88274], [-23.69974, 133.88276], [-23.69967, 133.88281], [-23.6996, 133.88282], [-23.69947, 133.88292], [-23.69935, 133.88297], [-23.69933, 133.883], [-23.69928, 133.88302], [-23.69912, 133.88302], [-23.69901, 133.88305], [-23.699, 133.88309], [-23.69901, 133.88325], [-23.69905, 133.88338], [-23.69907, 133.88341], [-23.69909, 133.88364], [-23.69916, 133.88378]],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2ca02c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_aca0e25eb4a2ff544009999077a96f0a);
+        
+    
+        var popup_8692e4835304550b568185297f9dc9b5 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_43b7c79f4092f9cc7a533860d380bd19 = $(`<div id="html_43b7c79f4092f9cc7a533860d380bd19" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 11         </h4>          <div>             <b>Date:</b> July 24, 2026 at 06:13 AM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 0.67 miles         </div>          <div>             <b>Elevation Gain:</b> 0 feet         </div>          <div>             <b>Moving Time:</b> 5m 7s         </div>     </div>     </div>`)[0];
+                popup_8692e4835304550b568185297f9dc9b5.setContent(html_43b7c79f4092f9cc7a533860d380bd19);
+            
+        
+
+        poly_line_9144e18c0c97cc69d437abe7601df174.bindPopup(popup_8692e4835304550b568185297f9dc9b5)
+        ;
+
+        
+    
+    
+            poly_line_9144e18c0c97cc69d437abe7601df174.bindTooltip(
+                `<div>
+                     Run 11 — 2026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_976154a533460abd213a6532fb759dc1 = L.polyline(
+                [[-23.69944, 133.88454], [-23.6997, 133.8845], [-23.69998, 133.88437], [-23.70017, 133.88434], [-23.70033, 133.88433], [-23.70047, 133.88429], [-23.7009, 133.88407], [-23.701, 133.88404], [-23.70106, 133.88399], [-23.70118, 133.88395], [-23.70163, 133.88388], [-23.70173, 133.88385], [-23.70202, 133.88381], [-23.70236, 133.88362], [-23.70255, 133.88349], [-23.70266, 133.88344], [-23.7028, 133.88335], [-23.70283, 133.8833], [-23.70283, 133.88326], [-23.70274, 133.88312], [-23.70268, 133.88298], [-23.70272, 133.88294], [-23.70275, 133.88294], [-23.70281, 133.88298], [-23.70288, 133.88315], [-23.70294, 133.88356], [-23.703, 133.88379], [-23.70302, 133.88394], [-23.70303, 133.88397], [-23.70309, 133.88433], [-23.7031, 133.88435], [-23.70312, 133.88453], [-23.70314, 133.88462], [-23.70314, 133.88474], [-23.70318, 133.88486], [-23.70318, 133.88495], [-23.7031, 133.88517], [-23.70306, 133.88517], [-23.70299, 133.88508], [-23.70291, 133.88502], [-23.70289, 133.88501], [-23.70284, 133.88502], [-23.7028, 133.88507], [-23.7028, 133.88505], [-23.7026, 133.88515], [-23.70215, 133.8855], [-23.70183, 133.88568], [-23.70159, 133.88579], [-23.70151, 133.88585], [-23.70118, 133.88597], [-23.7011, 133.88602], [-23.70099, 133.88604], [-23.70078, 133.88615], [-23.70075, 133.88615], [-23.70064, 133.88621], [-23.70056, 133.88628], [-23.70048, 133.8863], [-23.70024, 133.88643], [-23.69976, 133.88675], [-23.69959, 133.88681], [-23.69941, 133.8869], [-23.69904, 133.88703], [-23.69887, 133.88718], [-23.69857, 133.88731], [-23.6985, 133.88731], [-23.69843, 133.88725], [-23.69818, 133.88715], [-23.6981, 133.88715], [-23.698, 133.88713], [-23.6979, 133.88713], [-23.69785, 133.88712], [-23.69782, 133.88713], [-23.69772, 133.88711], [-23.69751, 133.88714], [-23.69748, 133.88712], [-23.69748, 133.88702], [-23.69743, 133.88683], [-23.69738, 133.88635], [-23.69737, 133.88619], [-23.69735, 133.88613], [-23.69729, 133.88553], [-23.69726, 133.88537], [-23.69727, 133.88525], [-23.69726, 133.88506], [-23.69729, 133.885], [-23.69733, 133.88496], [-23.69756, 133.88499], [-23.69768, 133.88499], [-23.69791, 133.88493], [-23.69797, 133.88491], [-23.69809, 133.88489], [-23.69817, 133.88484], [-23.6984, 133.88475], [-23.69842, 133.88474], [-23.69879, 133.88463], [-23.69891, 133.88458], [-23.69915, 133.88455], [-23.69931, 133.88451], [-23.69939, 133.88452]],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2ca02c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_aca0e25eb4a2ff544009999077a96f0a);
+        
+    
+        var popup_0286b9c61b289a922be909533938a484 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_b7fac0649fcc50c1d3d627ddd6d423e0 = $(`<div id="html_b7fac0649fcc50c1d3d627ddd6d423e0" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 10         </h4>          <div>             <b>Date:</b> July 19, 2026 at 05:43 AM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.15 miles         </div>          <div>             <b>Elevation Gain:</b> 9 feet         </div>          <div>             <b>Moving Time:</b> 9m 24s         </div>     </div>     </div>`)[0];
+                popup_0286b9c61b289a922be909533938a484.setContent(html_b7fac0649fcc50c1d3d627ddd6d423e0);
+            
+        
+
+        poly_line_976154a533460abd213a6532fb759dc1.bindPopup(popup_0286b9c61b289a922be909533938a484)
+        ;
+
+        
+    
+    
+            poly_line_976154a533460abd213a6532fb759dc1.bindTooltip(
+                `<div>
+                     Run 10 — 2026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_82aac3903bdc249d30a73018996b2450 = L.polyline(
+                [[-27.44577, 153.0395], [-27.44595, 153.03948], [-27.44625, 153.03939], [-27.44636, 153.03939], [-27.44643, 153.03936], [-27.44655, 153.03935], [-27.44681, 153.03928], [-27.44683, 153.03928], [-27.44684, 153.03932], [-27.44683, 153.03942], [-27.44687, 153.03955], [-27.44679, 153.03958], [-27.44669, 153.03965], [-27.44666, 153.03965], [-27.44664, 153.03969], [-27.4466, 153.0397], [-27.44651, 153.03978], [-27.44648, 153.03978], [-27.44643, 153.03985], [-27.44633, 153.03993], [-27.4462, 153.04002], [-27.44615, 153.04003], [-27.44614, 153.04008], [-27.44616, 153.04022], [-27.44616, 153.04028], [-27.44619, 153.04045], [-27.44619, 153.04052], [-27.44619, 153.04051], [-27.4462, 153.04054], [-27.44625, 153.04054], [-27.44631, 153.04064], [-27.44644, 153.04074], [-27.44662, 153.04075], [-27.44689, 153.0407], [-27.44703, 153.04065], [-27.44706, 153.04061], [-27.44706, 153.04059], [-27.44704, 153.04057], [-27.44697, 153.04056], [-27.44662, 153.04065], [-27.44649, 153.04067], [-27.44646, 153.04066], [-27.44642, 153.04067], [-27.4464, 153.04069], [-27.44642, 153.04076], [-27.44646, 153.04078], [-27.44648, 153.04084], [-27.44654, 153.04152], [-27.44661, 153.04183], [-27.44657, 153.04187], [-27.44638, 153.04191], [-27.44632, 153.0419], [-27.44629, 153.04191], [-27.44625, 153.0419], [-27.4462, 153.04193], [-27.44604, 153.04195], [-27.44601, 153.04194], [-27.44597, 153.04196], [-27.44592, 153.04193], [-27.4459, 153.04188], [-27.44585, 153.04173], [-27.44584, 153.04159], [-27.44582, 153.04157], [-27.44581, 153.04125], [-27.44577, 153.04102], [-27.44577, 153.04096], [-27.44575, 153.04091], [-27.44573, 153.04075], [-27.44569, 153.04057], [-27.44565, 153.04028], [-27.44564, 153.04006], [-27.44558, 153.0398], [-27.44556, 153.03962], [-27.44557, 153.03952], [-27.44569, 153.03952], [-27.44578, 153.03949], [-27.44579, 153.03951]],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2ca02c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_aca0e25eb4a2ff544009999077a96f0a);
+        
+    
+        var popup_e9d616b881b54eecc58b8bc81f356234 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_e52261167802671fc77a3f5cab969d1d = $(`<div id="html_e52261167802671fc77a3f5cab969d1d" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 9         </h4>          <div>             <b>Date:</b> July 17, 2026 at 07:40 AM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 0.59 miles         </div>          <div>             <b>Elevation Gain:</b> 110 feet         </div>          <div>             <b>Moving Time:</b> 5m 9s         </div>     </div>     </div>`)[0];
+                popup_e9d616b881b54eecc58b8bc81f356234.setContent(html_e52261167802671fc77a3f5cab969d1d);
+            
+        
+
+        poly_line_82aac3903bdc249d30a73018996b2450.bindPopup(popup_e9d616b881b54eecc58b8bc81f356234)
+        ;
+
+        
+    
+    
+            poly_line_82aac3903bdc249d30a73018996b2450.bindTooltip(
+                `<div>
+                     Run 9 — 2026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_8a7c38215293649095af8ddf6781053f = L.polyline(
+                [[50.05557, 19.93147], [50.05553, 19.93154], [50.05553, 19.93159], [50.05554, 19.93165], [50.05558, 19.9317], [50.05571, 19.93174], [50.05584, 19.9318], [50.05605, 19.93197], [50.05615, 19.93201], [50.05626, 19.93208], [50.05643, 19.93217], [50.05653, 19.93225], [50.05668, 19.9325], [50.0567, 19.93263], [50.05671, 19.93289], [50.05672, 19.93297], [50.05674, 19.93295], [50.05676, 19.93297], [50.05678, 19.93318], [50.05679, 19.93314], [50.05679, 19.93316], [50.05679, 19.93316], [50.05674, 19.93312], [50.05666, 19.93304], [50.05665, 19.93295], [50.05661, 19.93285], [50.05659, 19.93268], [50.05655, 19.93259], [50.05652, 19.93256], [50.05634, 19.93246], [50.05598, 19.93215], [50.05578, 19.93203], [50.05566, 19.93204], [50.05559, 19.93211], [50.05553, 19.93224], [50.05551, 19.93236], [50.05552, 19.9325], [50.05555, 19.93261], [50.0556, 19.9327], [50.05567, 19.9328], [50.05592, 19.93301], [50.05615, 19.93315], [50.05624, 19.93317], [50.05631, 19.93324], [50.0564, 19.93324], [50.05654, 19.93309], [50.05656, 19.93304], [50.05657, 19.93289], [50.05655, 19.93274], [50.05653, 19.93266], [50.05648, 19.93256], [50.05643, 19.93251], [50.05633, 19.93244], [50.05621, 19.93232], [50.05602, 19.93221], [50.05579, 19.932], [50.05575, 19.93199], [50.05565, 19.93203], [50.05562, 19.93207], [50.05556, 19.9322], [50.05554, 19.93234], [50.05554, 19.93245], [50.05557, 19.93262], [50.0556, 19.93268], [50.05574, 19.93281], [50.05608, 19.93304], [50.05624, 19.93319], [50.05629, 19.93326], [50.05645, 19.93322], [50.05651, 19.93316], [50.05657, 19.93306], [50.05661, 19.93294], [50.05661, 19.93276], [50.05659, 19.93267], [50.05655, 19.93259], [50.0565, 19.93254], [50.05636, 19.93245], [50.05597, 19.93214], [50.05578, 19.93203], [50.05572, 19.93204], [50.05563, 19.93209], [50.05559, 19.93215], [50.05555, 19.93227], [50.05554, 19.93248], [50.05559, 19.93268], [50.05587, 19.933], [50.05598, 19.93308], [50.05613, 19.93314], [50.05632, 19.93327], [50.05638, 19.93328], [50.05651, 19.93307], [50.05655, 19.93306], [50.05661, 19.93321], [50.05673, 19.93327], [50.0568, 19.93337], [50.05685, 19.93352], [50.05693, 19.93361], [50.05694, 19.93368], [50.05688, 19.93393], [50.0567, 19.93413], [50.05663, 19.93415], [50.05653, 19.93416], [50.05647, 19.9342], [50.05639, 19.93429], [50.05627, 19.93431], [50.05619, 19.93441], [50.05607, 19.93444], [50.056, 19.93452], [50.05588, 19.93467], [50.0557, 19.93479], [50.05558, 19.93479], [50.05549, 19.93474], [50.05534, 19.93471], [50.05529, 19.93469], [50.05524, 19.93464], [50.05522, 19.93453], [50.05521, 19.93419], [50.05518, 19.93414], [50.05506, 19.93402], [50.05499, 19.93366], [50.05504, 19.93334], [50.05509, 19.93317], [50.05514, 19.93274], [50.05528, 19.93245], [50.05539, 19.9321], [50.05547, 19.93175], [50.05561, 19.9311], [50.05566, 19.93096], [50.05571, 19.93089]],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2ca02c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_aca0e25eb4a2ff544009999077a96f0a);
+        
+    
+        var popup_530c68b50f2ac89a8e5ae9074f08764c = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_1243fc62486e70362f88755411706575 = $(`<div id="html_1243fc62486e70362f88755411706575" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 8         </h4>          <div>             <b>Date:</b> June 22, 2026 at 07:59 AM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.10 miles         </div>          <div>             <b>Elevation Gain:</b> 15 feet         </div>          <div>             <b>Moving Time:</b> 10m 25s         </div>     </div>     </div>`)[0];
+                popup_530c68b50f2ac89a8e5ae9074f08764c.setContent(html_1243fc62486e70362f88755411706575);
+            
+        
+
+        poly_line_8a7c38215293649095af8ddf6781053f.bindPopup(popup_530c68b50f2ac89a8e5ae9074f08764c)
+        ;
+
+        
+    
+    
+            poly_line_8a7c38215293649095af8ddf6781053f.bindTooltip(
+                `<div>
+                     Run 8 — 2026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_bd3c004705328955497da3b6d6aeff60 = L.polyline(
+                [[50.05524, 19.93061], [50.05528, 19.9305], [50.05536, 19.93016], [50.0554, 19.92981], [50.0554, 19.92935], [50.05538, 19.929], [50.05532, 19.92869], [50.05512, 19.92804], [50.05503, 19.9279], [50.05495, 19.92786], [50.05425, 19.92843], [50.05401, 19.92857], [50.05387, 19.92871], [50.0535, 19.929], [50.05341, 19.92909], [50.05343, 19.92916], [50.05358, 19.9294], [50.05361, 19.92946], [50.05362, 19.92954], [50.05359, 19.92993], [50.05355, 19.93014], [50.05341, 19.93062], [50.05329, 19.93086], [50.0532, 19.93099], [50.05318, 19.931], [50.05319, 19.93093], [50.05314, 19.93095], [50.05296, 19.9311], [50.05261, 19.93134], [50.05251, 19.93139], [50.05237, 19.93149], [50.05228, 19.93152], [50.05185, 19.93182], [50.05155, 19.93198], [50.05126, 19.93219], [50.05103, 19.9323], [50.05099, 19.93229], [50.0509, 19.93224], [50.05056, 19.93239], [50.05036, 19.93244], [50.0503, 19.9324], [50.05027, 19.93241], [50.04998, 19.93263], [50.04987, 19.93275], [50.0497, 19.93287], [50.04966, 19.93287], [50.04963, 19.93285], [50.04956, 19.93271], [50.04949, 19.93265], [50.04949, 19.93262], [50.04951, 19.93257], [50.04948, 19.93247], [50.04946, 19.93247], [50.04942, 19.93251], [50.04939, 19.93257], [50.04937, 19.93265], [50.04939, 19.93299], [50.04943, 19.93322], [50.04978, 19.93426], [50.05003, 19.93507], [50.05016, 19.93541], [50.05022, 19.9354], [50.05037, 19.93524], [50.0506, 19.93506], [50.0509, 19.9349], [50.05148, 19.93442], [50.05167, 19.93431], [50.05183, 19.93418], [50.05195, 19.93405], [50.05211, 19.93393], [50.0527, 19.93352], [50.05292, 19.93339], [50.05297, 19.93339], [50.05304, 19.93345], [50.05311, 19.93342], [50.05329, 19.93322], [50.05347, 19.93305], [50.05379, 19.93297], [50.05396, 19.93295], [50.05411, 19.93298], [50.05426, 19.93297], [50.05436, 19.93293], [50.05446, 19.93286], [50.05462, 19.93271], [50.05476, 19.93252], [50.05508, 19.93198], [50.0552, 19.93165], [50.05528, 19.93134], [50.05532, 19.93111], [50.05536, 19.93061], [50.05539, 19.93055], [50.05543, 19.93054], [50.05547, 19.93057]],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2ca02c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_aca0e25eb4a2ff544009999077a96f0a);
+        
+    
+        var popup_61428898780d3b108078674fc117f685 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_5bad92ed112bcc6ca2438668b86cf49b = $(`<div id="html_5bad92ed112bcc6ca2438668b86cf49b" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 7         </h4>          <div>             <b>Date:</b> June 20, 2026 at 07:10 AM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.25 miles         </div>          <div>             <b>Elevation Gain:</b> 25 feet         </div>          <div>             <b>Moving Time:</b> 11m 2s         </div>     </div>     </div>`)[0];
+                popup_61428898780d3b108078674fc117f685.setContent(html_5bad92ed112bcc6ca2438668b86cf49b);
+            
+        
+
+        poly_line_bd3c004705328955497da3b6d6aeff60.bindPopup(popup_61428898780d3b108078674fc117f685)
+        ;
+
+        
+    
+    
+            poly_line_bd3c004705328955497da3b6d6aeff60.bindTooltip(
+                `<div>
+                     Run 7 — 2026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_4a80b8c03d5db3e7ddde1fadd70b450a = L.polyline(
+                [[52.24076, 21.01638], [52.24037, 21.01661], [52.23997, 21.01676], [52.23982, 21.01688], [52.23962, 21.01709], [52.23936, 21.01726], [52.23923, 21.0173], [52.23917, 21.01733], [52.23908, 21.01742], [52.23895, 21.01752], [52.23884, 21.01755], [52.23867, 21.01757], [52.23856, 21.01763], [52.23846, 21.01764], [52.23834, 21.01768], [52.23817, 21.01772], [52.23795, 21.01773], [52.23781, 21.01779], [52.23756, 21.01784], [52.2372, 21.01789], [52.23712, 21.01793], [52.23705, 21.01801], [52.237, 21.01802], [52.23695, 21.01805], [52.23681, 21.01805], [52.23636, 21.01808], [52.2361, 21.0182], [52.23597, 21.01822], [52.2358, 21.01828], [52.23555, 21.01846], [52.23539, 21.01854], [52.23517, 21.01856], [52.23503, 21.0186], [52.23484, 21.0187], [52.23464, 21.01878], [52.23455, 21.01886], [52.23436, 21.01889], [52.23424, 21.01896], [52.23412, 21.01896], [52.23401, 21.01903], [52.23368, 21.01917], [52.23334, 21.01923], [52.23331, 21.01931], [52.23331, 21.01945], [52.23336, 21.01969], [52.23346, 21.02005], [52.23336, 21.02037], [52.23358, 21.02029], [52.23374, 21.02014], [52.23401, 21.01999], [52.2341, 21.01998], [52.23431, 21.01999], [52.23433, 21.01997], [52.23439, 21.01986], [52.23454, 21.01981], [52.23473, 21.01961], [52.2348, 21.0196], [52.23489, 21.01956], [52.23502, 21.01957], [52.23513, 21.01954], [52.23516, 21.01952], [52.23518, 21.01945], [52.23523, 21.01939], [52.23542, 21.01939], [52.23545, 21.01944], [52.23549, 21.01973], [52.23555, 21.01993], [52.23565, 21.02007], [52.23571, 21.02018], [52.23573, 21.02042], [52.23581, 21.02039], [52.23593, 21.02028], [52.23599, 21.02031], [52.23613, 21.02031], [52.23626, 21.02035], [52.2363, 21.02039], [52.23642, 21.02066], [52.23645, 21.02066], [52.23652, 21.02063], [52.23672, 21.02049], [52.23685, 21.02042], [52.23701, 21.02031], [52.23714, 21.02007], [52.23717, 21.01997], [52.23719, 21.01979], [52.23711, 21.01902], [52.23704, 21.0184], [52.23697, 21.01814], [52.23698, 21.01807], [52.23701, 21.01803], [52.23705, 21.01801], [52.23727, 21.01797], [52.23755, 21.01778], [52.23766, 21.01776], [52.23782, 21.0177], [52.23788, 21.0177], [52.23801, 21.01776], [52.23818, 21.01774], [52.23824, 21.01775], [52.2383, 21.01779], [52.23837, 21.01788], [52.23837, 21.01786], [52.23844, 21.01781], [52.23862, 21.01778], [52.23877, 21.01769], [52.23884, 21.01762], [52.23884, 21.01758], [52.23882, 21.01757], [52.23881, 21.01758], [52.2388, 21.01756], [52.23885, 21.01748], [52.23892, 21.01742], [52.23899, 21.01739], [52.2391, 21.01736], [52.23928, 21.01728], [52.23943, 21.01716], [52.23957, 21.01701], [52.23969, 21.01696], [52.23974, 21.01696], [52.23975, 21.01704], [52.23977, 21.01705], [52.24006, 21.01678], [52.24018, 21.0167], [52.24034, 21.01663], [52.24066, 21.01635], [52.24077, 21.01632], [52.24089, 21.01631], [52.24102, 21.01625]],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2ca02c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_aca0e25eb4a2ff544009999077a96f0a);
+        
+    
+        var popup_97e307ed2030a6d2cd7e7326ec6f0b14 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_61446a206bc288884c494c361488b45f = $(`<div id="html_61446a206bc288884c494c361488b45f" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 6         </h4>          <div>             <b>Date:</b> June 17, 2026 at 07:22 AM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.30 miles         </div>          <div>             <b>Elevation Gain:</b> 23 feet         </div>          <div>             <b>Moving Time:</b> 9m 53s         </div>     </div>     </div>`)[0];
+                popup_97e307ed2030a6d2cd7e7326ec6f0b14.setContent(html_61446a206bc288884c494c361488b45f);
+            
+        
+
+        poly_line_4a80b8c03d5db3e7ddde1fadd70b450a.bindPopup(popup_97e307ed2030a6d2cd7e7326ec6f0b14)
+        ;
+
+        
+    
+    
+            poly_line_4a80b8c03d5db3e7ddde1fadd70b450a.bindTooltip(
+                `<div>
+                     Run 6 — 2026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a74b7e6e659f10cbb1a10db773499b78 = L.polyline(
+                [[52.24081, 21.01629], [52.24084, 21.01633], [52.24098, 21.01627], [52.24152, 21.01593], [52.24172, 21.01577], [52.24178, 21.01576], [52.24193, 21.01579], [52.242, 21.01576], [52.2423, 21.01544], [52.24254, 21.01526], [52.24271, 21.01505], [52.24275, 21.01505], [52.24284, 21.01499], [52.24305, 21.01481], [52.24341, 21.01454], [52.24343, 21.0145], [52.24341, 21.01446], [52.24341, 21.01442], [52.24353, 21.01444], [52.24365, 21.01441], [52.24368, 21.01444], [52.2439, 21.01434], [52.24425, 21.01421], [52.24447, 21.01416], [52.24456, 21.01416], [52.2449, 21.0141], [52.24546, 21.01386], [52.24564, 21.01382], [52.24583, 21.01371], [52.246, 21.01365], [52.24619, 21.01349], [52.24632, 21.01342], [52.24627, 21.01344], [52.2463, 21.01344], [52.24635, 21.01347], [52.24636, 21.01352], [52.2466, 21.01351], [52.24682, 21.01365], [52.24721, 21.01368], [52.24769, 21.01376], [52.24788, 21.01371], [52.24793, 21.01372], [52.24803, 21.01382], [52.24806, 21.01382], [52.2481, 21.01379], [52.24825, 21.01356], [52.24845, 21.01339], [52.24855, 21.01324], [52.24883, 21.01305], [52.24897, 21.0129], [52.24906, 21.01276], [52.24912, 21.01261], [52.24923, 21.01252], [52.24927, 21.01246], [52.24928, 21.01241], [52.24928, 21.01234], [52.24927, 21.01231], [52.24921, 21.01227], [52.24921, 21.01223], [52.24924, 21.01223], [52.2493, 21.01227], [52.24933, 21.01236], [52.24939, 21.01245], [52.24963, 21.0127], [52.24971, 21.01298], [52.24973, 21.01301], [52.24978, 21.01302], [52.24985, 21.01296], [52.25003, 21.01258], [52.25029, 21.01224], [52.25033, 21.01216], [52.25033, 21.01211], [52.25032, 21.01205], [52.25029, 21.01205], [52.25023, 21.01198], [52.24994, 21.01145], [52.24988, 21.01142], [52.2498, 21.01147], [52.24964, 21.01184], [52.24941, 21.01214], [52.2492, 21.01233], [52.24916, 21.01234], [52.24912, 21.01231], [52.24902, 21.0121], [52.24888, 21.0119], [52.24882, 21.01187], [52.24877, 21.01187], [52.24881, 21.0119], [52.24879, 21.01196], [52.24872, 21.01212], [52.24866, 21.01229], [52.2485, 21.01257], [52.24836, 21.01268], [52.24814, 21.01304], [52.24802, 21.01315], [52.24786, 21.01338], [52.24778, 21.01337], [52.24765, 21.01325], [52.24759, 21.01323], [52.24743, 21.01328], [52.24716, 21.01331], [52.24703, 21.01336], [52.24682, 21.01341], [52.24666, 21.01352], [52.24658, 21.01356], [52.24641, 21.01359], [52.24624, 21.01365], [52.24604, 21.01374], [52.24561, 21.01385], [52.24523, 21.01398], [52.24509, 21.01405], [52.24493, 21.0141], [52.24474, 21.0141], [52.24463, 21.01412], [52.24407, 21.0143], [52.24399, 21.01435], [52.24377, 21.01441], [52.24338, 21.0146], [52.24306, 21.01479], [52.24272, 21.0151], [52.24258, 21.0152], [52.24242, 21.01536], [52.24233, 21.01542], [52.24225, 21.01558], [52.24206, 21.01575], [52.24187, 21.01582], [52.24174, 21.01583], [52.24166, 21.01586], [52.24147, 21.01598], [52.24106, 21.01617], [52.24092, 21.01627]],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2ca02c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_aca0e25eb4a2ff544009999077a96f0a);
+        
+    
+        var popup_1fcf9108759635209a63c9c9609f9c36 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_ddef8dded0e5662557d38b6b5582e3b6 = $(`<div id="html_ddef8dded0e5662557d38b6b5582e3b6" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 5         </h4>          <div>             <b>Date:</b> June 16, 2026 at 06:24 AM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.51 miles         </div>          <div>             <b>Elevation Gain:</b> 20 feet         </div>          <div>             <b>Moving Time:</b> 11m 44s         </div>     </div>     </div>`)[0];
+                popup_1fcf9108759635209a63c9c9609f9c36.setContent(html_ddef8dded0e5662557d38b6b5582e3b6);
+            
+        
+
+        poly_line_a74b7e6e659f10cbb1a10db773499b78.bindPopup(popup_1fcf9108759635209a63c9c9609f9c36)
+        ;
+
+        
+    
+    
+            poly_line_a74b7e6e659f10cbb1a10db773499b78.bindTooltip(
+                `<div>
+                     Run 5 — 2026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_7516d702328bae993cc1e3ddf7089e92 = L.polyline(
+                [[40.75307, -73.89124], [40.75308, -73.89099], [40.75311, -73.89088], [40.75323, -73.88999], [40.75325, -73.88971], [40.75324, -73.88934], [40.75328, -73.88901], [40.7533, -73.8887], [40.75335, -73.88834], [40.75335, -73.8881], [40.75338, -73.88791], [40.7535, -73.88745], [40.75356, -73.88714], [40.75355, -73.88693], [40.7536, -73.88667], [40.75361, -73.88622], [40.75369, -73.88577], [40.75368, -73.88561], [40.75371, -73.88547], [40.75375, -73.88515], [40.75375, -73.88477], [40.7538, -73.88459], [40.7538, -73.88443], [40.75383, -73.88429], [40.75384, -73.884], [40.75393, -73.8838], [40.75392, -73.88355], [40.75395, -73.88327], [40.75394, -73.88303], [40.75403, -73.8827], [40.75402, -73.88254], [40.75406, -73.88192], [40.75408, -73.88186], [40.75416, -73.88176], [40.75418, -73.88172], [40.75418, -73.88134], [40.75419, -73.88119], [40.75423, -73.88104], [40.75423, -73.8809], [40.75427, -73.88043], [40.75428, -73.88044], [40.75425, -73.88062], [40.75417, -73.88083], [40.75412, -73.88112], [40.75409, -73.88148], [40.75406, -73.88191], [40.754, -73.88213], [40.754, -73.88248], [40.75399, -73.88257], [40.75394, -73.88273], [40.75397, -73.88305], [40.75391, -73.88344], [40.75389, -73.88387], [40.75385, -73.88404], [40.75382, -73.88452], [40.75377, -73.88481], [40.75376, -73.88534], [40.75372, -73.88555], [40.75371, -73.88577], [40.75367, -73.88592], [40.75367, -73.88611], [40.75359, -73.88652], [40.75358, -73.88682], [40.75348, -73.88778], [40.75349, -73.88812], [40.75347, -73.88821], [40.75337, -73.88835], [40.75334, -73.88854], [40.75338, -73.88923], [40.75336, -73.88945], [40.75323, -73.89008], [40.75323, -73.89015], [40.75325, -73.89027], [40.75326, -73.89036], [40.75318, -73.89061], [40.75321, -73.89065], [40.75316, -73.89124], [40.75311, -73.89151], [40.75308, -73.89198], [40.75304, -73.89214], [40.75306, -73.89231], [40.75305, -73.89258], [40.753, -73.89286], [40.75291, -73.89305], [40.75287, -73.8931], [40.75283, -73.89316], [40.75283, -73.89342], [40.75288, -73.89375], [40.75288, -73.89388], [40.75282, -73.89417], [40.75277, -73.8951], [40.75274, -73.89529], [40.75272, -73.89531], [40.75272, -73.89543], [40.75263, -73.89609], [40.75262, -73.89625], [40.75264, -73.89643], [40.7526, -73.89657], [40.7526, -73.89689], [40.75256, -73.89707], [40.75255, -73.8971], [40.7525, -73.89712], [40.75245, -73.89711], [40.75242, -73.89708], [40.75241, -73.89701], [40.75245, -73.89677], [40.75249, -73.89637], [40.75263, -73.89576], [40.75264, -73.89547]],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2ca02c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_aca0e25eb4a2ff544009999077a96f0a);
+        
+    
+        var popup_a1c4a01f213629c97cc651d2dc9d4e4f = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_250cb2fac8bc9cb624406eefe2f770aa = $(`<div id="html_250cb2fac8bc9cb624406eefe2f770aa" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 4         </h4>          <div>             <b>Date:</b> April 23, 2026 at 01:01 PM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.80 miles         </div>          <div>             <b>Elevation Gain:</b> 38 feet         </div>          <div>             <b>Moving Time:</b> 15m 11s         </div>     </div>     </div>`)[0];
+                popup_a1c4a01f213629c97cc651d2dc9d4e4f.setContent(html_250cb2fac8bc9cb624406eefe2f770aa);
+            
+        
+
+        poly_line_7516d702328bae993cc1e3ddf7089e92.bindPopup(popup_a1c4a01f213629c97cc651d2dc9d4e4f)
+        ;
+
+        
+    
+    
+            poly_line_7516d702328bae993cc1e3ddf7089e92.bindTooltip(
+                `<div>
+                     Run 4 — 2026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_f5d683deb72261bd28dd2152b8d2d9f0 = L.polyline(
+                [[40.75305, -73.89111], [40.75305, -73.89098], [40.75312, -73.89081], [40.75317, -73.8901], [40.75322, -73.88998], [40.75325, -73.88954], [40.75324, -73.88921], [40.75326, -73.88909], [40.7533, -73.88895], [40.7533, -73.88863], [40.75336, -73.88837], [40.75341, -73.88825], [40.7535, -73.88814], [40.75351, -73.8881], [40.75348, -73.88764], [40.75349, -73.88735], [40.75351, -73.88719], [40.75351, -73.88699], [40.75355, -73.88673], [40.75361, -73.88659], [40.7536, -73.88616], [40.75364, -73.88593], [40.75369, -73.88546], [40.75367, -73.88525], [40.7537, -73.88517], [40.75373, -73.88514], [40.75376, -73.88513], [40.7538, -73.88519], [40.7538, -73.88523], [40.75366, -73.88578], [40.75365, -73.88619], [40.75357, -73.88663], [40.75353, -73.88721], [40.75348, -73.8875], [40.75346, -73.8881], [40.75341, -73.88835], [40.75335, -73.88893], [40.75337, -73.88907], [40.7533, -73.8894], [40.75326, -73.88978], [40.75322, -73.89053], [40.75311, -73.89122]],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2ca02c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_aca0e25eb4a2ff544009999077a96f0a);
+        
+    
+        var popup_b1e9c1f3f92cc9d75a01ffa960fb0122 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_60629b86a5748de20dddac81ec0d6b65 = $(`<div id="html_60629b86a5748de20dddac81ec0d6b65" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 3         </h4>          <div>             <b>Date:</b> April 18, 2026 at 08:11 PM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.00 miles         </div>          <div>             <b>Elevation Gain:</b> 38 feet         </div>          <div>             <b>Moving Time:</b> 7m 35s         </div>     </div>     </div>`)[0];
+                popup_b1e9c1f3f92cc9d75a01ffa960fb0122.setContent(html_60629b86a5748de20dddac81ec0d6b65);
+            
+        
+
+        poly_line_f5d683deb72261bd28dd2152b8d2d9f0.bindPopup(popup_b1e9c1f3f92cc9d75a01ffa960fb0122)
+        ;
+
+        
+    
+    
+            poly_line_f5d683deb72261bd28dd2152b8d2d9f0.bindTooltip(
+                `<div>
+                     Run 3 — 2026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_d01f97488c8bfe506058655ddeec4cd8 = L.polyline(
+                [[40.75316, -73.89109], [40.75321, -73.89076], [40.75321, -73.89057], [40.75325, -73.89021], [40.75323, -73.88996], [40.75328, -73.88975], [40.75334, -73.88935], [40.75334, -73.88916], [40.75333, -73.88892], [40.75336, -73.88865], [40.75336, -73.88847], [40.75345, -73.88806], [40.75344, -73.88788], [40.75346, -73.88775], [40.75349, -73.88763], [40.75354, -73.88751], [40.75357, -73.8874], [40.75358, -73.88717], [40.75354, -73.88699], [40.75354, -73.88689], [40.75358, -73.8865], [40.7537, -73.88601], [40.75367, -73.88571], [40.7537, -73.88552], [40.75372, -73.88506], [40.75376, -73.88487], [40.75373, -73.88474], [40.75363, -73.88446], [40.75362, -73.88435], [40.75367, -73.88412], [40.75377, -73.88391], [40.75378, -73.88384], [40.75379, -73.88372], [40.75388, -73.88333], [40.75396, -73.88286], [40.75396, -73.88247], [40.7541, -73.88187], [40.75416, -73.88149], [40.75419, -73.88144], [40.7542, -73.88148], [40.7542, -73.88154], [40.75417, -73.88173], [40.75423, -73.8821], [40.7542, -73.88221], [40.75405, -73.88249], [40.754, -73.88264], [40.75399, -73.88298], [40.75395, -73.88339], [40.75395, -73.88367], [40.75388, -73.88395], [40.75387, -73.88413], [40.75383, -73.88428], [40.75383, -73.88441], [40.75379, -73.88463], [40.75372, -73.88536], [40.7537, -73.88586], [40.7536, -73.88621], [40.75359, -73.88666], [40.75353, -73.88722], [40.75354, -73.88744], [40.7535, -73.88767], [40.75345, -73.88783], [40.75341, -73.88811], [40.75339, -73.88849], [40.75331, -73.88909], [40.7533, -73.88954], [40.75325, -73.8901], [40.7531, -73.89101], [40.75308, -73.89139]],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2ca02c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_aca0e25eb4a2ff544009999077a96f0a);
+        
+    
+        var popup_df3a35e9765c29555efd33c463437330 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_2afb1b386e6f90026f56bb1327bf4233 = $(`<div id="html_2afb1b386e6f90026f56bb1327bf4233" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 2         </h4>          <div>             <b>Date:</b> January 10, 2026 at 10:24 PM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.40 miles         </div>          <div>             <b>Elevation Gain:</b> 37 feet         </div>          <div>             <b>Moving Time:</b> 12m 1s         </div>     </div>     </div>`)[0];
+                popup_df3a35e9765c29555efd33c463437330.setContent(html_2afb1b386e6f90026f56bb1327bf4233);
+            
+        
+
+        poly_line_d01f97488c8bfe506058655ddeec4cd8.bindPopup(popup_df3a35e9765c29555efd33c463437330)
+        ;
+
+        
+    
+    
+            poly_line_d01f97488c8bfe506058655ddeec4cd8.bindTooltip(
+                `<div>
+                     Run 2 — 2026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_fe20fe550a19a287726782920490d521 = L.polyline(
+                [[40.75302, -73.89114], [40.75304, -73.89098], [40.75309, -73.89079], [40.75317, -73.89021], [40.75319, -73.88994], [40.75319, -73.88957], [40.75331, -73.88901], [40.75333, -73.88872], [40.75345, -73.88797], [40.75344, -73.8879], [40.75341, -73.88785], [40.75347, -73.88745], [40.7535, -73.88705], [40.75357, -73.88661], [40.75358, -73.88639], [40.75365, -73.8858], [40.75369, -73.88521], [40.7537, -73.88514], [40.75373, -73.88511], [40.75376, -73.88517], [40.75376, -73.88522], [40.75366, -73.88564], [40.7536, -73.88604], [40.75359, -73.88626], [40.75354, -73.88657], [40.75352, -73.88706], [40.75346, -73.88754], [40.75348, -73.8877], [40.75348, -73.88783], [40.75339, -73.88828], [40.75337, -73.88848], [40.75338, -73.88878], [40.75335, -73.88894], [40.75335, -73.88921], [40.7533, -73.88971], [40.75321, -73.89012], [40.75318, -73.89056], [40.75321, -73.89061], [40.75317, -73.89086], [40.75317, -73.89103], [40.75313, -73.8913]],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2ca02c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_aca0e25eb4a2ff544009999077a96f0a);
+        
+    
+        var popup_9b7a4b6311e84f219a954e3ecdf75d03 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_3e50a89e2124126e4fea5aec77135eca = $(`<div id="html_3e50a89e2124126e4fea5aec77135eca" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 1         </h4>          <div>             <b>Date:</b> January 04, 2026 at 07:01 PM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.00 miles         </div>          <div>             <b>Elevation Gain:</b> 38 feet         </div>          <div>             <b>Moving Time:</b> 8m 9s         </div>     </div>     </div>`)[0];
+                popup_9b7a4b6311e84f219a954e3ecdf75d03.setContent(html_3e50a89e2124126e4fea5aec77135eca);
+            
+        
+
+        poly_line_fe20fe550a19a287726782920490d521.bindPopup(popup_9b7a4b6311e84f219a954e3ecdf75d03)
+        ;
+
+        
+    
+    
+            poly_line_fe20fe550a19a287726782920490d521.bindTooltip(
+                `<div>
+                     Run 1 — 2026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_aca0e25eb4a2ff544009999077a96f0a.addTo(map_4956a72c71ae0950c4a34f59067bd8de);
+        
+    
+            var marker_cluster_741d1ce45fd982634292b85d33cc0339 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_14b69b312baacbd403c2384ef62e7045 = L.circleMarker(
+                [-23.69914, 133.88381],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(marker_cluster_741d1ce45fd982634292b85d33cc0339);
+        
+    
+        var popup_7d09657cff2dd20d9d4b53add4aeaa88 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_78ef00721b7564237139f54fbe882c72 = $(`<div id="html_78ef00721b7564237139f54fbe882c72" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 11         </h4>          <div>             <b>Date:</b> July 24, 2026 at 06:13 AM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 0.67 miles         </div>          <div>             <b>Elevation Gain:</b> 0 feet         </div>          <div>             <b>Moving Time:</b> 5m 7s         </div>     </div>     </div>`)[0];
+                popup_7d09657cff2dd20d9d4b53add4aeaa88.setContent(html_78ef00721b7564237139f54fbe882c72);
+            
+        
+
+        circle_marker_14b69b312baacbd403c2384ef62e7045.bindPopup(popup_7d09657cff2dd20d9d4b53add4aeaa88)
+        ;
+
+        
+    
+    
+            circle_marker_14b69b312baacbd403c2384ef62e7045.bindTooltip(
+                `<div>
+                     Run 11 — 2026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3d5b8c575802e0cde8bbc27b06ea3e60 = L.circleMarker(
+                [-23.69944, 133.88454],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(marker_cluster_741d1ce45fd982634292b85d33cc0339);
+        
+    
+        var popup_2cd148c67b8482551ad95ea2c601e4fe = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_4b3c701964963c800fcccb693279c557 = $(`<div id="html_4b3c701964963c800fcccb693279c557" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 10         </h4>          <div>             <b>Date:</b> July 19, 2026 at 05:43 AM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.15 miles         </div>          <div>             <b>Elevation Gain:</b> 9 feet         </div>          <div>             <b>Moving Time:</b> 9m 24s         </div>     </div>     </div>`)[0];
+                popup_2cd148c67b8482551ad95ea2c601e4fe.setContent(html_4b3c701964963c800fcccb693279c557);
+            
+        
+
+        circle_marker_3d5b8c575802e0cde8bbc27b06ea3e60.bindPopup(popup_2cd148c67b8482551ad95ea2c601e4fe)
+        ;
+
+        
+    
+    
+            circle_marker_3d5b8c575802e0cde8bbc27b06ea3e60.bindTooltip(
+                `<div>
+                     Run 10 — 2026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd2d288803854fa641d35d8788badc63 = L.circleMarker(
+                [-27.44577, 153.0395],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(marker_cluster_741d1ce45fd982634292b85d33cc0339);
+        
+    
+        var popup_d93c84aad9b972211cde2e8e0fb1cd01 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_e24596998fde0675416c136c6115fcbc = $(`<div id="html_e24596998fde0675416c136c6115fcbc" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 9         </h4>          <div>             <b>Date:</b> July 17, 2026 at 07:40 AM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 0.59 miles         </div>          <div>             <b>Elevation Gain:</b> 110 feet         </div>          <div>             <b>Moving Time:</b> 5m 9s         </div>     </div>     </div>`)[0];
+                popup_d93c84aad9b972211cde2e8e0fb1cd01.setContent(html_e24596998fde0675416c136c6115fcbc);
+            
+        
+
+        circle_marker_dd2d288803854fa641d35d8788badc63.bindPopup(popup_d93c84aad9b972211cde2e8e0fb1cd01)
+        ;
+
+        
+    
+    
+            circle_marker_dd2d288803854fa641d35d8788badc63.bindTooltip(
+                `<div>
+                     Run 9 — 2026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ef4c29458f5eb288f6bed327db75228 = L.circleMarker(
+                [50.05557, 19.93147],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(marker_cluster_741d1ce45fd982634292b85d33cc0339);
+        
+    
+        var popup_da01110c8f84b5dac02ece549cd1cefd = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_80777f05b7e05968b6d5134138aacc05 = $(`<div id="html_80777f05b7e05968b6d5134138aacc05" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 8         </h4>          <div>             <b>Date:</b> June 22, 2026 at 07:59 AM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.10 miles         </div>          <div>             <b>Elevation Gain:</b> 15 feet         </div>          <div>             <b>Moving Time:</b> 10m 25s         </div>     </div>     </div>`)[0];
+                popup_da01110c8f84b5dac02ece549cd1cefd.setContent(html_80777f05b7e05968b6d5134138aacc05);
+            
+        
+
+        circle_marker_0ef4c29458f5eb288f6bed327db75228.bindPopup(popup_da01110c8f84b5dac02ece549cd1cefd)
+        ;
+
+        
+    
+    
+            circle_marker_0ef4c29458f5eb288f6bed327db75228.bindTooltip(
+                `<div>
+                     Run 8 — 2026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2d623f8f127f4e3e27910ce5c0ee481e = L.circleMarker(
+                [50.05524, 19.93061],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(marker_cluster_741d1ce45fd982634292b85d33cc0339);
+        
+    
+        var popup_4559c6e0602bff17df74583d0dd0ab87 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_877f3fee41f2259884bd6eeda2849dbb = $(`<div id="html_877f3fee41f2259884bd6eeda2849dbb" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 7         </h4>          <div>             <b>Date:</b> June 20, 2026 at 07:10 AM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.25 miles         </div>          <div>             <b>Elevation Gain:</b> 25 feet         </div>          <div>             <b>Moving Time:</b> 11m 2s         </div>     </div>     </div>`)[0];
+                popup_4559c6e0602bff17df74583d0dd0ab87.setContent(html_877f3fee41f2259884bd6eeda2849dbb);
+            
+        
+
+        circle_marker_2d623f8f127f4e3e27910ce5c0ee481e.bindPopup(popup_4559c6e0602bff17df74583d0dd0ab87)
+        ;
+
+        
+    
+    
+            circle_marker_2d623f8f127f4e3e27910ce5c0ee481e.bindTooltip(
+                `<div>
+                     Run 7 — 2026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9978ddc17a359d48a1e509ff0476da21 = L.circleMarker(
+                [52.24076, 21.01638],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(marker_cluster_741d1ce45fd982634292b85d33cc0339);
+        
+    
+        var popup_629a7c0b3142351472da5cebf23c8a33 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_6823488f30506fbbea223d5f96997a41 = $(`<div id="html_6823488f30506fbbea223d5f96997a41" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 6         </h4>          <div>             <b>Date:</b> June 17, 2026 at 07:22 AM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.30 miles         </div>          <div>             <b>Elevation Gain:</b> 23 feet         </div>          <div>             <b>Moving Time:</b> 9m 53s         </div>     </div>     </div>`)[0];
+                popup_629a7c0b3142351472da5cebf23c8a33.setContent(html_6823488f30506fbbea223d5f96997a41);
+            
+        
+
+        circle_marker_9978ddc17a359d48a1e509ff0476da21.bindPopup(popup_629a7c0b3142351472da5cebf23c8a33)
+        ;
+
+        
+    
+    
+            circle_marker_9978ddc17a359d48a1e509ff0476da21.bindTooltip(
+                `<div>
+                     Run 6 — 2026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b0bda2d664e7474ee26c2e089208a5c0 = L.circleMarker(
+                [52.24081, 21.01629],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(marker_cluster_741d1ce45fd982634292b85d33cc0339);
+        
+    
+        var popup_23dd55514268c1a391c2741fcc62f280 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_1f93ffb3e31d2e0700b306a6365a613d = $(`<div id="html_1f93ffb3e31d2e0700b306a6365a613d" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 5         </h4>          <div>             <b>Date:</b> June 16, 2026 at 06:24 AM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.51 miles         </div>          <div>             <b>Elevation Gain:</b> 20 feet         </div>          <div>             <b>Moving Time:</b> 11m 44s         </div>     </div>     </div>`)[0];
+                popup_23dd55514268c1a391c2741fcc62f280.setContent(html_1f93ffb3e31d2e0700b306a6365a613d);
+            
+        
+
+        circle_marker_b0bda2d664e7474ee26c2e089208a5c0.bindPopup(popup_23dd55514268c1a391c2741fcc62f280)
+        ;
+
+        
+    
+    
+            circle_marker_b0bda2d664e7474ee26c2e089208a5c0.bindTooltip(
+                `<div>
+                     Run 5 — 2026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5d55d2d81dcc2d96c125c11ac264e54e = L.circleMarker(
+                [40.75307, -73.89124],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(marker_cluster_741d1ce45fd982634292b85d33cc0339);
+        
+    
+        var popup_8d859e841c6f55951d5fb45b1296c62c = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_c27f676b4b66aa905b9f8b3661d9b39f = $(`<div id="html_c27f676b4b66aa905b9f8b3661d9b39f" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 4         </h4>          <div>             <b>Date:</b> April 23, 2026 at 01:01 PM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.80 miles         </div>          <div>             <b>Elevation Gain:</b> 38 feet         </div>          <div>             <b>Moving Time:</b> 15m 11s         </div>     </div>     </div>`)[0];
+                popup_8d859e841c6f55951d5fb45b1296c62c.setContent(html_c27f676b4b66aa905b9f8b3661d9b39f);
+            
+        
+
+        circle_marker_5d55d2d81dcc2d96c125c11ac264e54e.bindPopup(popup_8d859e841c6f55951d5fb45b1296c62c)
+        ;
+
+        
+    
+    
+            circle_marker_5d55d2d81dcc2d96c125c11ac264e54e.bindTooltip(
+                `<div>
+                     Run 4 — 2026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_67e4c9524ac92a4485a893e7ba9298bc = L.circleMarker(
+                [40.75305, -73.89111],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(marker_cluster_741d1ce45fd982634292b85d33cc0339);
+        
+    
+        var popup_169f256f776999ea3427bb130c36f819 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_5a37dd98b4064b43ee66674bc6ea9b9e = $(`<div id="html_5a37dd98b4064b43ee66674bc6ea9b9e" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 3         </h4>          <div>             <b>Date:</b> April 18, 2026 at 08:11 PM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.00 miles         </div>          <div>             <b>Elevation Gain:</b> 38 feet         </div>          <div>             <b>Moving Time:</b> 7m 35s         </div>     </div>     </div>`)[0];
+                popup_169f256f776999ea3427bb130c36f819.setContent(html_5a37dd98b4064b43ee66674bc6ea9b9e);
+            
+        
+
+        circle_marker_67e4c9524ac92a4485a893e7ba9298bc.bindPopup(popup_169f256f776999ea3427bb130c36f819)
+        ;
+
+        
+    
+    
+            circle_marker_67e4c9524ac92a4485a893e7ba9298bc.bindTooltip(
+                `<div>
+                     Run 3 — 2026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ad961115d156a8ec069df96d7dfebd54 = L.circleMarker(
+                [40.75316, -73.89109],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(marker_cluster_741d1ce45fd982634292b85d33cc0339);
+        
+    
+        var popup_bd8ec9b227b50ee269d98645062a663e = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_4f1407735b9f65e99777f0e036aa84bb = $(`<div id="html_4f1407735b9f65e99777f0e036aa84bb" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 2         </h4>          <div>             <b>Date:</b> January 10, 2026 at 10:24 PM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.40 miles         </div>          <div>             <b>Elevation Gain:</b> 37 feet         </div>          <div>             <b>Moving Time:</b> 12m 1s         </div>     </div>     </div>`)[0];
+                popup_bd8ec9b227b50ee269d98645062a663e.setContent(html_4f1407735b9f65e99777f0e036aa84bb);
+            
+        
+
+        circle_marker_ad961115d156a8ec069df96d7dfebd54.bindPopup(popup_bd8ec9b227b50ee269d98645062a663e)
+        ;
+
+        
+    
+    
+            circle_marker_ad961115d156a8ec069df96d7dfebd54.bindTooltip(
+                `<div>
+                     Run 2 — 2026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f275f6d094cd36fe14970ab3c23b7eaf = L.circleMarker(
+                [40.75302, -73.89114],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(marker_cluster_741d1ce45fd982634292b85d33cc0339);
+        
+    
+        var popup_138ad6d3423470480957983b07935807 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_3dd4e8142160c4fea265e50caab25d51 = $(`<div id="html_3dd4e8142160c4fea265e50caab25d51" style="width: 100.0%; height: 100.0%;">     <div style="         width: 280px;         font-family: Arial, sans-serif;         line-height: 1.55;     ">         <h4 style="             margin: 0 0 10px 0;             font-size: 17px;         ">             Run 1         </h4>          <div>             <b>Date:</b> January 04, 2026 at 07:01 PM         </div>          <div>             <b>Category:</b> Running         </div>          <div>             <b>Strava Type:</b> Run         </div>          <div>             <b>Distance:</b> 1.00 miles         </div>          <div>             <b>Elevation Gain:</b> 38 feet         </div>          <div>             <b>Moving Time:</b> 8m 9s         </div>     </div>     </div>`)[0];
+                popup_138ad6d3423470480957983b07935807.setContent(html_3dd4e8142160c4fea265e50caab25d51);
+            
+        
+
+        circle_marker_f275f6d094cd36fe14970ab3c23b7eaf.bindPopup(popup_138ad6d3423470480957983b07935807)
+        ;
+
+        
+    
+    
+            circle_marker_f275f6d094cd36fe14970ab3c23b7eaf.bindTooltip(
+                `<div>
+                     Run 1 — 2026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_741d1ce45fd982634292b85d33cc0339.addTo(map_4956a72c71ae0950c4a34f59067bd8de);
+        
+    
+            map_4956a72c71ae0950c4a34f59067bd8de.fitBounds(
+                [[-27.44706, -73.89712], [52.25033, 153.04196]],
+                {"padding": [45, 45]}
+            );
+        
+    
+            var layer_control_5418d218356f3d490bf2990bf13b877e_layers = {
+                base_layers : {
+                    "Light Map" : tile_layer_5fb723a75d48679ef4a84d1a7c537879,
+                    "Street Map" : tile_layer_1b1907353c39ec413a4c7ff768e1fdd5,
+                    "Dark Map" : tile_layer_c19f9c390d566cf660055218f772d454,
+                },
+                overlays :  {
+                    "2024 Running Routes" : feature_group_7004fe13847d857648890d399eea5470,
+                    "2024 Running Starts" : marker_cluster_110b02bf7af56f079b3b27c08a94d00f,
+                    "2025 Running Routes" : feature_group_86950d22f9819a256e1d928ddefe5e2f,
+                    "2025 Running Starts" : marker_cluster_b4328c9f3a1658431e8022005dadbca0,
+                    "2026 Running Routes" : feature_group_aca0e25eb4a2ff544009999077a96f0a,
+                    "2026 Running Starts" : marker_cluster_741d1ce45fd982634292b85d33cc0339,
+                },
+            };
+            let layer_control_5418d218356f3d490bf2990bf13b877e = L.control.layers(
+                layer_control_5418d218356f3d490bf2990bf13b877e_layers.base_layers,
+                layer_control_5418d218356f3d490bf2990bf13b877e_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_4956a72c71ae0950c4a34f59067bd8de);
+
+        
+</script>
+</html>

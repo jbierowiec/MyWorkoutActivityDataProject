@@ -243,7 +243,7 @@ Date,Ride Name,Est. Power (W),Power Zone
 2026-03-29 13:28:00+00:00,Afternoon Ride,128.6,Z1 - Recovery
 2026-03-29 16:37:02+00:00,Afternoon Ride,161.5,Z2 - Endurance
 2026-03-31 04:21:20+00:00,Morning Ride,88.5,Z1 - Recovery
-2026-03-31 04:27:34+00:00,Ride 16: NYC -> Albany,99.8,Z1 - Recovery
+2026-03-31 04:27:34+00:00,Ride 16: NYC -> Albany,108.8,Z1 - Recovery
 2026-04-02 13:47:19+00:00,Ride 17,122.2,Z1 - Recovery
 2026-04-03 09:21:35+00:00,Ride 18,87.2,Z1 - Recovery
 2026-04-04 12:30:24+00:00,Hike 1,33.9,Z1 - Recovery
@@ -311,3 +311,66 @@ Date,Ride Name,Est. Power (W),Power Zone
 2026-05-30 07:18:38+00:00,Morning Ride,123.7,Z1 - Recovery
 2026-05-30 07:37:09+00:00,Morning Ride,97.1,Z1 - Recovery
 2026-05-30 14:30:18+00:00,Hike 10,41.9,Z1 - Recovery
+2026-06-01 20:13:06+00:00,Evening Ride,121.5,Z1 - Recovery
+2026-06-01 21:05:45+00:00,Night Ride,84.7,Z1 - Recovery
+2026-06-02 20:31:32+00:00,Ride 47,166.7,Z2 - Endurance
+2026-06-04 20:09:59+00:00,Ride 48,168.7,Z2 - Endurance
+2026-06-06 10:46:15+00:00,Ride 49,158.8,Z2 - Endurance
+2026-06-06 12:58:50+00:00,Afternoon Ride,129.7,Z1 - Recovery
+2026-06-07 07:30:07+00:00,Ride 50,168.5,Z2 - Endurance
+2026-06-09 20:40:57+00:00,Ride 51,114.8,Z1 - Recovery
+2026-06-11 09:02:12+00:00,Walk 2,10.0,Z1 - Recovery
+2026-06-12 04:35:43+00:00,Ride 52,129.5,Z1 - Recovery
+2026-06-13 03:55:40+00:00,Ride 53 (Full),139.1,Z2 - Endurance
+2026-06-13 06:44:35+00:00,Ride 53,138.7,Z2 - Endurance
+2026-06-16 05:39:45+00:00,Walk 3,6.3,Z1 - Recovery
+2026-06-16 06:24:04+00:00,Run 5,27.0,Z1 - Recovery
+2026-06-16 11:15:59+00:00,Walk 4,16.5,Z1 - Recovery
+2026-06-17 07:22:49+00:00,Run 6,29.9,Z1 - Recovery
+2026-06-17 09:48:56+00:00,Walk 5,7.1,Z1 - Recovery
+2026-06-17 13:04:35+00:00,Walk 6,7.2,Z1 - Recovery
+2026-06-18 05:18:06+00:00,Ride 54,78.4,Z1 - Recovery
+2026-06-18 09:11:50+00:00,Walk 7,5.2,Z1 - Recovery
+2026-06-19 14:03:48+00:00,Afternoon Ride,49.9,Z1 - Recovery
+2026-06-20 07:10:27+00:00,Run 7,24.0,Z1 - Recovery
+2026-06-20 12:14:24+00:00,Walk 8,7.5,Z1 - Recovery
+2026-06-22 07:59:07+00:00,Run 8,19.3,Z1 - Recovery
+2026-06-22 17:57:17+00:00,Afternoon Ride,97.5,Z1 - Recovery
+2026-06-23 10:04:38+00:00,Hike 11,23.9,Z1 - Recovery
+2026-06-23 17:34:44+00:00,Afternoon Ride,135.9,Z1 - Recovery
+2026-06-26 20:23:07+00:00,Ride 55,167.3,Z2 - Endurance
+2026-06-27 10:30:09+00:00,Morning Ride,126.4,Z1 - Recovery
+2026-06-27 10:55:45+00:00,Lunch Ride,180.1,Z2 - Endurance
+2026-06-27 11:55:37+00:00,Afternoon Ride,126.2,Z1 - Recovery
+2026-06-27 13:35:18+00:00,Afternoon Ride,93.3,Z1 - Recovery
+2026-06-29 05:47:00+00:00,NYC -> Buffalo: Day 1,122.0,Z1 - Recovery
+2026-06-30 06:56:16+00:00,NYC -> Buffalo: Day 2,118.4,Z1 - Recovery
+2026-07-01 06:51:02+00:00,NYC -> Buffalo: Day 3,106.4,Z1 - Recovery
+2026-07-02 07:17:35+00:00,NYC -> Buffalo: Day 4,77.5,Z1 - Recovery
+2026-07-03 06:35:06+00:00,NYC -> Buffalo: Day 5,75.1,Z1 - Recovery
+2026-07-04 06:49:48+00:00,Buffalo -> Niagara Falls (Bonus),84.4,Z1 - Recovery
+2026-07-04 22:52:28+00:00,Night Ride,142.2,Z2 - Endurance
+2026-07-07 13:44:00+00:00,Ride 62,144.9,Z2 - Endurance
+2026-07-08 12:27:25+00:00,Hike 12,42.0,Z1 - Recovery
+2026-07-09 11:45:28+00:00,Ride 63,158.3,Z2 - Endurance
+2026-07-10 07:47:12+00:00,Ride 64,127.6,Z1 - Recovery
+2026-07-11 11:17:50+00:00,Hike 13,47.3,Z1 - Recovery
+2026-07-11 20:12:13+00:00,Night Ride,131.4,Z1 - Recovery
+2026-07-14 10:51:47+00:00,Walk 9,14.1,Z1 - Recovery
+2026-07-15 12:28:39+00:00,Walk 10,10.4,Z1 - Recovery
+2026-07-16 08:42:04+00:00,Walk 11,17.4,Z1 - Recovery
+2026-07-16 15:38:20+00:00,Walk 12,11.1,Z1 - Recovery
+2026-07-17 07:40:40+00:00,Run 9,83.5,Z1 - Recovery
+2026-07-17 10:17:47+00:00,Walk 13,17.8,Z1 - Recovery
+2026-07-17 13:26:20+00:00,Hike 14,35.3,Z1 - Recovery
+2026-07-19 05:43:21+00:00,Run 10,22.7,Z1 - Recovery
+2026-07-19 09:52:36+00:00,Larapinta: Day 1,42.9,Z1 - Recovery
+2026-07-20 06:39:43+00:00,Larapinta: Day 2,20.8,Z1 - Recovery
+2026-07-21 06:45:48+00:00,Larapinta: Day 3,28.0,Z1 - Recovery
+2026-07-22 08:20:03+00:00,Larapinta: Day 4,17.5,Z1 - Recovery
+2026-07-23 06:59:21+00:00,Larapinta: Day 5,27.5,Z1 - Recovery
+2026-07-24 06:13:55+00:00,Run 11,22.5,Z1 - Recovery
+2026-07-26 09:11:06+00:00,Walk 15,21.4,Z1 - Recovery
+2026-07-26 10:24:38+00:00,Kayak 1,32.3,Z1 - Recovery
+2026-07-26 13:29:57+00:00,Walk 16,7.8,Z1 - Recovery
+2026-07-27 09:56:11+00:00,Walk 17,11.5,Z1 - Recovery
