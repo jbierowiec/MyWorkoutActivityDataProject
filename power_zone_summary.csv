@@ -312,6 +312,9 @@ Date,Ride Name,Est. Power (W),Power Zone
 2026-05-30 07:37:09+00:00,Morning Ride,97.1,Z1 - Recovery
 2026-05-30 14:30:18+00:00,Hike 10,41.9,Z1 - Recovery
 2026-06-01 20:13:06+00:00,Evening Ride,121.5,Z1 - Recovery
+2026-06-01 20:31:47+00:00,Sprint 1,74.7,Z1 - Recovery
+2026-06-01 20:40:46+00:00,Jog/Run 1,21.2,Z1 - Recovery
+2026-06-01 20:50:52+00:00,Jog/Run 2,17.8,Z1 - Recovery
 2026-06-01 21:05:45+00:00,Night Ride,84.7,Z1 - Recovery
 2026-06-02 20:31:32+00:00,Ride 47,166.7,Z2 - Endurance
 2026-06-04 20:09:59+00:00,Ride 48,168.7,Z2 - Endurance
@@ -374,3 +377,5 @@ Date,Ride Name,Est. Power (W),Power Zone
 2026-07-26 10:24:38+00:00,Kayak 1,32.3,Z1 - Recovery
 2026-07-26 13:29:57+00:00,Walk 16,7.8,Z1 - Recovery
 2026-07-27 09:56:11+00:00,Walk 17,11.5,Z1 - Recovery
+2026-07-31 07:19:39+00:00,Run 12,26.1,Z1 - Recovery
+2026-07-31 21:28:53+00:00,Run 13,38.0,Z1 - Recovery
